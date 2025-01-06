@@ -1,6 +1,5 @@
 # 3D Rasterizer
-A fully functional 3D rasterizer that can display .xyz files, incorporating:
-* matrix transformation
+A fully functional 3D rasterizer that can display .xyz files, incorporating:* matrix transformation
 * backface elimination
 * painter's algorithm
 * view frustum clipping
