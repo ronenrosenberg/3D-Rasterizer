@@ -292,7 +292,7 @@ int draw_object () {
   }
   
   //apply transformations
-	for (int i = 0; i < numpolys; i++) {
+  for (int i = 0; i < numpolys; i++) {
     M3d_make_identity(final);
     //rotation
     M3d_make_x_rotation_cs(rotate, cos(x_rotate_amount), sin(x_rotate_amount));
@@ -315,9 +315,9 @@ int draw_object () {
     for (int j = 0; j < polygons[i].np; j++) {
 	    int h = con[i][j];
 	    polygons[i].z_avg += polygons[i].z[j];
-	  }
+    }
     //polygons[i].z_avg = polygons[i].np;
-    polygons[i].z_avg = polygons[i].z[0]; //seems to work better when I just grab the first z value? wtf?
+    polygons[i].z_avg = polygons[i].z[0]; //seems to work better when I just grab arbitrary z value
   }
 
   //sort our list of polygons based on avg z value
